@@ -1,0 +1,72 @@
+[
+    {
+        "id": 1,
+        "name": "Alien Covenant",
+        "sinopsis": "Ridley Scott regresa al universo que creó en 'Alien' con 'Alien: Covenant', el segundo capítulo de una trilogía precuela que comenzó con 'Prometheus' — y conecta directamente con el seminal trabajo de ciencia ficción de Scott en 1979. Con rumbo a un remoto planeta en la parte más alejada de la galaxia, la tripulación de la nave colonial Covenant descubre lo que parece ser un paraíso inexplorado, cuando en realidad es un oscuro y peligroso mundo — cuyo único habitante es el 'sintético' David (Michael Fassbender), superviviente de la maldita expedición Prometheus.",
+        "genre": "Ciencia Ficción",
+        "image": "alienAlargarSagaMuerta2.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Déjame Salir",
+        "sinopsis": "",
+        "genre": "Terror",
+        "image": "dejameSalir.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Fast & Furious 8",
+        "sinopsis": "",
+        "genre": "Acción",
+        "image": "f&f8.jpg"
+    },
+    {
+        "id": 4,
+        "name": "Gru 3",
+        "sinopsis": "",
+        "genre": "Animación",
+        "image": "gru3.jpg"
+    },
+    {
+        "id": 5,
+        "name": "Wonder Woman",
+        "sinopsis": "",
+        "genre": "Ciencia Ficción",
+        "image": "leHumaneMaraville.jpg"
+    },
+    {
+        "id": 6,
+        "name": "Logan",
+        "sinopsis": "",
+        "genre": "Ciencia Ficción",
+        "image": "logan&niñaLatina.jpg"
+    },
+    {
+        "id": 7,
+        "name": "La guerra del planeta de los simios",
+        "sinopsis": "",
+        "genre": "Ciencia Ficción",
+        "image": "monosQHablan3.jpg"
+    },
+    {
+        "id": 8,
+        "name": "Piratas del Caribe: La venganza de Salazar",
+        "sinopsis": "",
+        "genre": "Fantástica",
+        "image": "piratasMierdosos.jpg"
+    },
+    {
+        "id": 9,
+        "name": "Spiderman: Homecoming",
+        "sinopsis": "",
+        "genre": "Ciencia Ficción",
+        "image": "spidermanMenosMalo.jpg"
+    },
+    {
+        "id": 10,
+        "name": "Transformers: El ultimo Caballero",
+        "sinopsis": "",
+        "genre": "Ciencia Ficción",
+        "image": "transformers34.jpg"
+    }
+]
