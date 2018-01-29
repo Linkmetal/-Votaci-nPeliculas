@@ -13,7 +13,7 @@ function load(){
             $(movies[i]).find("a").text(data[i].name);
         }
         showInfo();
-    });
+    });                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
 }
 
 $(document).ready(function(){
@@ -36,14 +36,16 @@ $(document).ready(function(){
                 moved = false;
                 $(this).css('z-index', 2);
                 $(this).next().css('z-index', 1);
+                $(".movie").find("a").attr('tabindex', 0);
                 $(this).next().toggle( "fold", 1000 );
             }
             else{
                 $(this).css('position', "inherit");
-                
+                $(".movie").find("a").attr('tabindex', -1);
                 $(".movie, .details").css('z-index', 0);
                 $(this).css('z-index', 2);
                 $(this).next().css('z-index', 1);
+                $(this).find("a").attr('tabindex', 1);
                 $(this).next().toggle( "fold", 1000 );
                 $(this).position({
                     my: "left top",
