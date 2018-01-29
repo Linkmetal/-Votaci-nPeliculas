@@ -10,7 +10,7 @@
     <link rel="icon" href="img/boya.png">
     <script src="js/main.js"></script>
     <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
     <title>Votar peliculas</title>
 </head>
 
@@ -22,25 +22,41 @@
         <div id="moviesContainer" class="">
             <p class="subtitle">Votación de películas</p>
             <div id="movies">
-                <div id="m1" class="movie"><p class="name" ><a href="#"></a></p></div>
+                <div id="m1" value="1" class="movie"><p class="name" ><a href="#"></a></p></div>
                 <div class="details"></div>
-                <div id="m2" class="movie"><p class="name" ><a href="#"></a></p></div>
+                <div id="m2" value="2" class="movie"><p class="name" ><a href="#"></a></p></div>
                 <div class="details"></div>
-                <div id="m3" class="movie"><p class="name" ><a href="#"></a></p></div>
+                <div id="m3" value="3" class="movie"><p class="name" ><a href="#"></a></p></div>
                 <div class="details"></div>
-                <div id="m4" class="movie"><p class="name" ><a href="#"></a></p></div>
+                <div id="m4" value="4" class="movie"><p class="name" ><a href="#"></a></p></div>
                 <div class="details"></div>
-                <div id="m5" class="movie"><p class="name" ><a href="#"></a></p></div>
+                <div id="m5" value="5" class="movie"><p class="name" ><a href="#"></a></p></div>
                 <div class="details"></div>
-                <div id="m6" class="movie"><p class="name" ><a href="#"></a></p></div>
+                <div id="m6" value="6" class="movie"><p class="name" ><a href="#"></a></p></div>
                 <div class="details"></div>
-                <div id="m7" class="movie"><p class="name" ><a href="#"></a></p></div>
+                <div id="m7" value="7" class="movie"><p class="name" ><a href="#"></a></p></div>
                 <div class="details"></div>
-                <div id="m8" class="movie"><p class="name" ><a href="#"></a></p></div>
+                <div id="m8" value="8" class="movie"><p class="name" ><a href="#"></a></p></div>
                 <div class="details"></div>
-                <div id="m9" class="movie"><p class="name" ><a href="#"></a></p></div>
+                <div id="m9" value="9" class="movie"><p class="name" ><a href="#"></a></p></div>
                 <div class="details"></div>
-                <div id="m10" class="movie"><p class="name" ><a href="#"></a></p></div>
+                <div id="m10" value="10" class="movie"><p class="name" ><a href="#"></a></p></div>
+                <div class="details"></div>
+            </div>
+        </div>
+        <div id="formDiv">
+            <p class="subtitle">Rellene el formulario</p>
+            <div id="form">
+                <label for="nameInput">Nombre:
+                    <input type="text" id="nameInput" required="true">
+                </label></br></br>
+                <label for="emailInput">Email:
+                    <input type="text" id="emailInput" required="true">
+                </label></br></br>
+                <div>
+                    <button id="submitForm">Votar</button>
+                    <button id="cancelForm">Cancelar</button>
+                </div>
             </div>
         </div>
     </div>
