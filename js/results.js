@@ -23,13 +23,18 @@ function calculate() {
 
 
 function drawChart() {
+    var tts = "Resultados de la votación: ";
     calculate();
     var data = new google.visualization.DataTable();
     data.addColumn('string', 'Movie');
     data.addColumn('number', 'Votes');
     for(let i = 0; i < times.length; i++){
         data.addRow([movies[i], times[i]]);
+        tts += movies[i] + ", " + times[i] + " votos. "
     }
+    $("#chartDiv1, #chartDiv2, #chartDiv3").attr("aria-label", tts);
+    $("#chartDiv1, #chartDiv2, #chartDiv3").attr("tabindex", 0);
+
 
     // Set chart options
     var options = {
