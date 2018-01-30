@@ -11,6 +11,7 @@ function load(){
         for(let i = 0; i < data.length; i++){
             movies[i].style.backgroundImage = "url('/img/" + data[i].image + "')";
             $(movies[i]).find("a").text(data[i].name);
+            $(movies[i]).find("a").attr("aria-label", data[i].name)
         }
         showInfo();
     });                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
@@ -36,10 +37,12 @@ $(document).ready(function(){
                 moved = false;
                 $(this).css('z-index', 2);
                 $(this).next().css('z-index', 1);
-                $(".movie").find("a").attr('tabindex', 0);
+                $(".movie").find("a").attr('tabindex', 1);
                 $(this).next().toggle( "fold", 1000 );
+                $(this).find("a").attr("aria-label", $(this).next().find("p").text());
             }
             else{
+                $("p:visible").focus();
                 $(this).css('position', "inherit");
                 $(".movie").find("a").attr('tabindex', -1);
                 $(".movie, .details").css('z-index', 0);
@@ -47,6 +50,7 @@ $(document).ready(function(){
                 $(this).next().css('z-index', 1);
                 $(this).find("a").attr('tabindex', 1);
                 $(this).next().toggle( "fold", 1000 );
+                $(this).find("a").attr("aria-label", "Pulse enter para seleccionar otra pelicula");
                 $(this).position({
                     my: "left top",
                     at: "left+8% top+8%",
@@ -85,7 +89,7 @@ function showInfo(){
         id = id.split("m");
         let movieData = data[id[1]-1];
         $(movies[i]).next().append(
-            "<p class='subtitle'>" + movieData.name + "</p><p class='sinopsis'>" + movieData.sinopsis + "</p><button>Votar esta pelicula</button>"
+            "<p tabindex='0' class='subtitle'>" + movieData.name + "<p class='sinopsis' tabindex='0'><span class='subtitle2'>Sinopsis:</span></br></br>" + movieData.sinopsis + "</p><button tabindex='0'> Votar esta pelicula</button>"
         );
         $(movies[i]).next().find("button").position({
             my: "center center",

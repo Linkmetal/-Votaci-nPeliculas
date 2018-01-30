@@ -11,16 +11,16 @@
     <script src="js/main.js"></script>
     <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-    <title>Votar peliculas</title>
+    <title>Votar películas</title>
 </head>
 
 <body>
     <div id="mainContainer" class="">
         <div id="header" class="">
-            <span class="title">Premios Boya</span><img src="img/boya.png" alt="Imagen de una boya">
+            <h1 tabindex="0" class="title" aria-label="Premios Boya">Premios Boya</h1><img src="img/boya.png" alt="Imagen de una boya">
         </div>
         <div id="moviesContainer" class="">
-            <p class="subtitle">Votación de películas</p>
+            <p tabindex="0" aria-label="Seleccione película y pulse enter para seleccionarla" class="subtitle">Votación de películas</p>
             <div id="movies">
                 <div id="m1" value="1" class="movie"><p class="name" ><a href="#"></a></p></div>
                 <div class="details"></div>
@@ -45,17 +45,17 @@
             </div>
         </div>
         <div id="formDiv">
-            <p class="subtitle">Rellene el formulario</p>
+            <p aria-label="Rellene el formulario" class="subtitle">Rellene el formulario</p>
             <div id="form">
-                <label for="nameInput">Nombre:
+                <label aria-label="Introduzca nombre, requerido" for="nameInput">Nombre:
                     <input type="text" id="nameInput" required="true">
                 </label></br></br>
-                <label for="emailInput">Email:
+                <label aria-label="Introduzca email, requerido" for="emailInput">Email:
                     <input type="text" id="emailInput" required="true">
                 </label></br></br>
                 <div>
-                    <button id="submitForm">Votar</button>
-                    <button id="cancelForm">Cancelar</button>
+                    <button aria-label="Pulse enter para enviar el voto" id="submitForm">Votar</button>
+                    <button aria-label="Pulse enter para cancelar" id="cancelForm">Cancelar</button>
                 </div>
             </div>
         </div>
